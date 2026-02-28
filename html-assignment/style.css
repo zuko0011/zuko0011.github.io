@@ -1,0 +1,100 @@
+/* =========================
+   CSS for HTML Assignment
+   Author: DAVID ZUKO
+   ========================= */
+
+/* --- Inheritance --- */
+body {
+  font-family: Arial, Helvetica, sans-serif; /* inherited font */
+  font-size: 18px; /* increase font size */
+  line-height: 1.6;
+  margin: 0;
+  padding: 0 20px;
+  background-color: #fefefe;
+}
+
+/* --- Select multiple elements: header & footer --- */
+header,
+footer {
+  background-color: #203a43; /* same background color */
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* --- Class selector for main heading --- */
+.site-title {
+  color: #4caf50; /* heading text color */
+}
+
+/* --- ID selector for image --- */
+#my-image {
+  box-shadow: 0 0 2px 1px black; /* 0 horizontal & vertical, blur 2px, spread 1px, black */
+  border-radius: 5px;
+}
+
+/* --- Center Figure/Image --- */
+figure {
+  text-align: center; /* center image and figcaption */
+  margin: 25px 0;
+}
+
+figure img {
+  display: inline-block; /* allows centering */
+  max-width: 100%; /* responsive */
+  border-radius: 5px;
+  box-shadow: 0 0 2px 1px black;
+}
+
+/* --- Blockquote Styling --- */
+blockquote {
+  margin: 20px 0;
+  padding: 15px 20px;
+  border-left: 5px solid #4caf50; /* accent color */
+  background-color: #f9f9f9;
+  font-style: italic;
+  color: #555555;
+}
+
+blockquote cite {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #203a43;
+  font-style: normal;
+}
+
+/* --- Hobbies list --- */
+section ul {
+  list-style-type: square; /* bullets replaced with squares */
+  padding-left: 20px;
+}
+
+section ul li:nth-child(odd) {
+  background-color: #f0f0f0; /* odd items background */
+  padding: 5px;
+}
+
+/* --- Navigation Styling --- */
+nav ul {
+  list-style-type: none; /* remove bullets */
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+nav a {
+  text-decoration: none; /* remove underline */
+  color: white;
+  background-color: #4caf50;
+  padding: 8px 15px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: #45a049; /* background on hover/focus */
+}

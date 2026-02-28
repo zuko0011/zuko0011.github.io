@@ -3,15 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <title>HTML Assignment</title>
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <h1>DAVID ZUKO</h1>
+      <h1 class="site-title">DAVID ZUKO</h1>
 
-      <!-- ✅ ADDING NAVIGATION BUTTONS HERE -->
+      <!-- Navigation Buttons -->
       <nav>
-        <a href="index.html">Home</a> |
-        <a href="notes.html">Notes</a>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="notes.html">Notes</a></li>
+        </ul>
       </nav>
     </header>
 
@@ -43,19 +47,20 @@
           and authentic.
         </p>
 
-        <!-- ✅ IMAGERY INSERTION TAG HERE -->
+        <!-- Image -->
         <figure>
           <img
+            id="my-image"
             src="images/DavidZuko.JPG"
             alt="Portrait of David Zuko, freelance photographer"
             width="300"
           />
-
           <figcaption>
             Portrait of me during a creative photoshoot session.
           </figcaption>
         </figure>
 
+        <!-- Blockquote -->
         <blockquote>
           “I move forward even when the path feels uncertain, because staying
           consistent with my vision is how I turn discipline into progress.”
@@ -63,7 +68,7 @@
         </blockquote>
       </article>
 
-      <!-- ✅ ADD HOBBIES SECTION HERE -->
+      <!-- Hobbies Section -->
       <section>
         <h2>Hobbies</h2>
         <ul>

@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Three Star Media</title>
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/eab258384f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="logo">
+        <img
+          src="images/logo.png"
+          alt="Three Star Media Logo"
+          class="logo-img"
+        />
+      </div>
+
+      <!-- Navigation -->
+      <nav aria-label="Main Navigation">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <!-- Search Form -->
+        <form role="search">
+          <label for="search">Search</label>
+          <input type="search" id="search" placeholder="Search" />
+          <button type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+      </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+      <!-- Banner Section -->
+      <section id="home" class="banner">
+        <img src="images/main-banner.jpg" alt="Office workspace" />
+        <div class="banner-content">
+          <h1>Welcome to Three Star Media</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magni rerum
+            voluptas nesciunt quas nostrum similique nihil.
+          </p>
+          <a href="#"
+            >Connect with us <i class="fa-solid fa-caret-right"></i
+          ></a>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="about">
+        <img src="images/about-us.jpg" alt="Office environment" />
+        <div class="about-content">
+          <h2>About Us</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section id="services">
+        <h2>Our Services</h2>
+
+        <div class="services-container">
+          <!-- Digital -->
+          <article class="service">
+            <img src="images/digital.jpg" alt="Digital Transformation" />
+            <h3>Digital Transformation</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <a href="#"
+              >Digital Plans <i class="fa-solid fa-caret-right"></i
+            ></a>
+          </article>
+
+          <!-- Marketing -->
+          <article class="service">
+            <img src="images/marketing.jpg" alt="Marketing" />
+            <h3>Marketing</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <a href="#"
+              >Marketing Plans <i class="fa-solid fa-caret-right"></i
+            ></a>
+          </article>
+
+          <!-- Video -->
+          <article class="service">
+            <img src="images/video.jpg" alt="Video Production" />
+            <h3>Video Production</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <a href="#">Video Plans <i class="fa-solid fa-caret-right"></i></a>
+          </article>
+
+          <!-- Web -->
+          <article class="service">
+            <img src="images/web.jpg" alt="Web Development" />
+            <h3>Web Development</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <a href="#">Web Plans <i class="fa-solid fa-caret-right"></i></a>
+          </article>
+
+          <!-- Print -->
+          <article class="service">
+            <img src="images/print.jpg" alt="Print services" />
+            <h3>Print</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <a href="#">Print Plans <i class="fa-solid fa-caret-right"></i></a>
+          </article>
+        </div>
+      </section>
+
+      <!-- Vision Section -->
+      <section class="vision">
+        <img src="images/vision.jpg" alt="Vision concept image" />
+        <div>
+          <h2>Our Vision</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <a href="#">Learn More <i class="fa-solid fa-caret-right"></i></a>
+        </div>
+      </section>
+
+      <!-- Team Section -->
+      <section id="team">
+        <h2>Our Team</h2>
+
+        <!-- John -->
+        <article class="team-member">
+          <img src="images/john.jpg" alt="John Doe" />
+          <div>
+            <h3>John Doe</h3>
+            <p>CEO and Co-owner</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </article>
+
+        <!-- Bob -->
+        <article class="team-member">
+          <img src="images/bob.jpg" alt="Bob Rite" />
+          <div>
+            <h3>Bob Rite</h3>
+            <p>CFO and Co-owner</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </article>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact">
+        <h2>Contact Us</h2>
+
+        <div class="contact-container">
+          <!-- Form -->
+          <div class="contact-form">
+            <h3>Send us a message</h3>
+
+            <form>
+              <label for="name">Full Name</label>
+              <input type="text" id="name" required />
+
+              <label for="email">Email</label>
+              <input type="email" id="email" required />
+
+              <label for="message">Message</label>
+              <textarea id="message" rows="5" required></textarea>
+
+              <button type="submit">Send</button>
+            </form>
+          </div>
+
+          <!-- Map -->
+          <div class="contact-map">
+            <h3>Location</h3>
+            <iframe
+              src="https://www.google.com/maps?q=Algonquin+College&output=embed"
+              style="width: 100%; height: 300px; border: 0"
+              loading="lazy"
+            >
+            </iframe>
+          </div>
+        </div>
+
+        <!-- Hours -->
+        <div class="hours">
+          <h3>Hours of operation</h3>
+          <table>
+            <tr>
+              <th>Days</th>
+              <th>Hours</th>
+            </tr>
+            <tr>
+              <td>Monday - Friday</td>
+              <td>9 AM - 6 PM</td>
+            </tr>
+            <tr>
+              <td>Saturday - Sunday</td>
+              <td>Closed</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 Three Star Media</p>
+      <p>All images are taken from Unsplash</p>
+    </footer>
+  </body>
+</html>

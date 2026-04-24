@@ -1,0 +1,474 @@
+/* CSS RESET (Assignment Requirement) */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* BASE */
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #222;
+  background: #fff;
+}
+
+section {
+  padding: 20px;
+}
+
+h2 {
+  margin-bottom: 15px;
+}
+
+/* HEADER */
+header {
+  background-color: #222;
+  padding: 0;
+}
+
+nav {
+  margin: 0;
+  padding: 0;
+  background-color: #222; /* ✅ FIX: ensures full black block */
+}
+
+header > * {
+  width: 100%;
+}
+
+/* LOGO BLOCK (MAIN COLOR YELLOW BOX TOP LEFT) */
+.logo {
+  background-color: #c78c06;
+  padding: 15px;
+}
+
+.logo img {
+  width: 80px;
+  display: block;
+}
+
+/* NAV MENU ALL (STACKED + CENTERED) */
+.nav-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #222; /* ✅ FIX: removes visual gaps */
+}
+
+.nav-menu li {
+  border: none; /* ✅ already good */
+}
+
+.nav-menu a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: #c78c06;
+  font-weight: bold;
+}
+
+/* ACTIVE MENU ITEM (HOME) */
+.nav-menu a.active {
+  background-color: #c78c06;
+  color: #000; /* ✅ FIXED typo */
+}
+
+/* SEARCH BAR */
+.search-form {
+  display: flex;
+  width: 100%;
+  margin: 0;
+  background-color: #222; /* ✅ FIX: keeps it inside black block */
+  padding: 10px;
+}
+
+.search-form input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.search-form button {
+  background-color: #c78c06;
+  border: none;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* ICON */
+.search-form i {
+  color: #000;
+  font-size: 16px;
+}
+
+/* HERO / BANNER */
+.banner {
+  position: relative;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* DARK OVERLAY */
+.banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5); /* dark overlay */
+}
+
+/* CONTENT CENTERED */
+.banner-content {
+  position: absolute;
+  top: 50%;
+  left: 30px; /* move content to the left like template */
+  transform: translateY(-50%); /* only vertical centering */
+  text-align: left;
+  color: #fff;
+  max-width: 90%;
+  z-index: 1;
+}
+
+/* TITLE */
+.banner-content h1 {
+  font-size: 2.9rem; /* ✅ slightly bigger like template */
+  font-weight: 700;
+  margin-bottom: 15px;
+  outline: bold;
+}
+
+/* ABOUT */
+.banner-content p {
+  font-size: 10px; /* ✅ closer to template */
+  line-height: 1.5; /* ✅ improves readability */
+  margin-bottom: 15px;
+}
+
+/* BUTTON */
+.banner-content a {
+  display: inline-flex; /* ✅ allows alignment */
+  align-items: center; /* ✅ vertical center */
+  gap: 10px; /* ✅ space between text + arrow */
+  background-color: #c78c06;
+  color: #000;
+  padding: 25px 25px;
+  font-weight: none;
+}
+
+/* ADD ABOUT SECTION RIGHT HERE */
+
+.about {
+  background-color: #ffe6ac;
+  padding: 10px;
+}
+
+/* IMAGE */
+.about img {
+  width: 100%;
+  display: block;
+  margin-bottom: 20px;
+}
+
+/* TEXT WRAPPER */
+.about-content {
+  padding: 5 10px; /* 🔥 gives breathing space like template */
+}
+
+/* TITLE */
+.about-content h2 {
+  font-size: 2rem;
+  font-weight: 1000;
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+/* PARAGRAPHS */
+.about-content p {
+  font-size: 11px;
+  line-height: 1.5; /* 🔥 better spacing */
+  color: #000;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+/* REMOVE LAST GAP */
+.about-content p:last-child {
+  margin-bottom: 8;
+}
+
+/* SERVICES */
+#services {
+  padding: 20px 15px;
+}
+
+/* SECTION TITLE */
+#services h2 {
+  font-size: 2rem;
+  font-weight: 2000;
+  margin-bottom: 15px;
+}
+
+/* EACH SERVICE BLOCK */
+.service {
+  margin-bottom: 10px;
+}
+
+/* IMAGE */
+.service img {
+  width: 100%;
+  display: block;
+}
+
+/* YELLOW CARD */
+.card {
+  background-color: #ffe6ac;
+  padding: 15px;
+}
+
+/* SERVICE TITLE */
+.card h3 {
+  font-size: 1.5rem;
+  font-weight: 2000;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+/* TEXT */
+.card p {
+  font-size: 10px;
+  line-height: 1.4;
+  text-align: justify;
+  color: #000;
+  margin-bottom: 12px;
+}
+
+/* BUTTON */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #222; /* BLACK BUTTON */
+  color: #fff;
+  padding: 25px 35px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+}
+.btn i {
+  font-size: 22px;
+}
+
+/* VISION */
+.vision {
+  position: relative;
+}
+
+.vision img {
+  width: 100%;
+  height: 200px; /* 🔥 KEY: controls banner height */
+  object-fit: cover; /* 🔥 crops image like template */
+  display: block;
+}
+
+/* LIGHTER OVERLAY (match template) */
+.vision::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4); /* 🔥 lighter */
+}
+
+/* TEXT BLOCK (LEFT ALIGNED, NOT FULL WIDTH) */
+.vision-content {
+  position: absolute;
+  top: 20%;
+  left: 30px;
+  color: #fff;
+  z-index: 15;
+  width: 90%;
+}
+
+/* TITLE */
+.vision-content h2 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+/* TEXT */
+.vision-content p {
+  font-size: 10px;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+/* BUTTON (DARK like template) */
+.vision-content .btn {
+  background-color: #222; /* 🔥 FIX */
+  color: #fff;
+  padding: 10px 14px;
+  font-size: 12px;
+}
+
+/* TEAM */
+.team-member {
+  margin-bottom: 20px;
+}
+
+/* IMAGE */
+.team-member img {
+  width: 100%;
+  display: block;
+}
+
+/* YELLOW CARD */
+.team-content {
+  background: #ffe6ac;
+  padding: 15px;
+}
+
+/* NAME */
+.team-content h3 {
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+
+/* ROLE */
+.team-content .role {
+  font-weight: 1000;
+  font-size: 12px;
+  color: #000;
+  text-decoration: #000;
+  border-bottom: 2px solid #c78c06;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+/* DESCRIPTION */
+.team-content p {
+  font-size: 11px;
+  line-height: 1.4;
+  text-align: justify;
+  color: #000;
+}
+
+/* CONTACT HEADINGS */
+#contact h2 {
+  font-weight: 800;
+  font-size: 1.8rem;
+  color: #000;
+}
+
+#contact h3,
+#contact h4 {
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+/* FORM */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+}
+
+/* SEND BUTTON */
+.btn-send {
+  background-color: #222;
+  color: #c78c06;
+  border: none;
+  padding: 8px 15px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* ===== CONTACT SPACING FIX ===== */
+
+.contact-form button {
+  margin-bottom: 20px;
+}
+
+.contact-info h4:first-of-type {
+  margin-top: 20px;
+}
+
+.contact-info table {
+  margin-bottom: 20px;
+}
+
+.contact-info h4:last-of-type {
+  margin-top: 10px;
+}
+
+/* CONTACT TITLES STRONG */
+.contact-info h4 {
+  font-weight: 800;
+  font-size: 1.3rem;
+  color: #000;
+}
+
+/* TABLE */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th {
+  background: #ffe6ac;
+  font-weight: 700;
+}
+
+th,
+td {
+  border: 1px solid #000;
+  padding: 10px;
+}
+
+/* MATCH HOURS + LOCATION TITLES */
+.contact-info h4 {
+  font-weight: 800; /* strong bold */
+  font-size: 1.1rem; /* same size */
+  color: #000;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* FOOTER */
+.site-footer {
+  background-color: #222;
+  color: #c78c06; /* 🔥 yellow text like template */
+  text-align: left;
+  padding: 15px;
+  font-size: 12px;
+}
